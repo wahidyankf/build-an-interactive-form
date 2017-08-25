@@ -59,7 +59,7 @@ const view = {
   },
   renderBilling() {
     controller.calculateBilling();
-    $('#total-billing').text(controller.getBilling());
+    $('#total-billing').text(`$ ${controller.getBilling()}`);
   },
   renderPayment() {
     $('#credit-card').hide();
